@@ -1,12 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "npm ci && npm run build"
-
-[build.nixpacksPlan]
-providers = []
-
-[build.nixpacksOptions]
-packageManager = "npm"
+buildCommand = "npm install --legacy-peer-deps && npm run build"
 
 [deploy]
 startCommand = "npm start"
